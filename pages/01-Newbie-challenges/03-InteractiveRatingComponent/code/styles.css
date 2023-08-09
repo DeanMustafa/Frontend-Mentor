@@ -1,0 +1,162 @@
+:root {
+  ---orange: hsl(25, 97%, 53%);
+
+  ---white: hsl(0, 0%, 100%);
+  ---lightGrey: hsl(217, 12%, 63%);
+  ---mediumGrey: hsl(216, 12%, 54%);
+  ---darkBlue: hsla(213, 20%, 18%, 0.5);
+  ---veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(---veryDarkBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.attribution {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(---white);
+}
+
+.attribution a {
+  color: var(---orange);
+}
+
+.attribution a:hover{
+  opacity: 0.7;
+}
+
+.card {
+  width: 50vh;
+  height: 55vh;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+  color: var(---white);
+  background: var(---darkBlue);
+  font-family: sans-serif;
+}
+
+.card img {
+  width: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  background: var(---darkBlue);
+}
+
+.card h2 {
+  margin: 15px 0;
+}
+
+.card p {
+  margin-bottom: 20px;
+  color: var(---lightGrey);
+  line-height: 23px;
+  font-size: 13px;
+}
+
+.rates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.rate {
+  text-align: center;
+  width: 45px;
+  background: var(---darkBlue);
+  padding: 13px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: var(---lightGrey);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.rate:hover {
+  background: var(---mediumGrey);
+  color: var(---white);
+}
+
+.rate:active {
+  scale: 0.9;
+}
+
+.clicked {
+  background: var(---orange);
+  color: var(---white);
+}
+
+.btn{
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  background: var(---orange);
+  color: var(---white);
+  width: 100%;
+  padding: 15px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: var(---white);
+  color: var(---orange);
+}
+
+.btn:active {
+  scale: 0.9;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    height: 50vh;
+    border-radius: 30px;
+    padding: 2em;
+  }
+
+  .card img {
+    width: 50px;
+    padding: 15px;
+  }
+
+  .card h2 {
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+
+  .card p {
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-size: 17px;
+  }
+
+  .rate {
+    width: 55px;
+    padding: 17.5px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+}

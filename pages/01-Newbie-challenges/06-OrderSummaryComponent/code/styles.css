@@ -1,0 +1,166 @@
+:root {
+  ---paleBlue: hsl(225, 100%, 94%);
+  ---brightBlue: hsl(245, 75%, 52%);
+
+  ---veryPaleBlue: hsl(225, 100%, 98%);
+  ---desaturatedBlue: hsl(224, 23%, 55%);
+  ---darkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(/FrontEndMentor/order-summary-component-main/images/pattern-background-desktop.svg) no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-color: var(---paleBlue);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.attribution {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(---darkBlue);
+  font-size: 13px;
+}
+
+.attribution a {
+  color: var(---brightBlue);
+}
+
+.attribution a:hover{
+  opacity: 0.7;
+}
+
+.background {
+  background: url(/FrontEndMentor/order-summary-component-main/images/pattern-background-desktop.svg);
+  z-index: 111;
+}
+
+.card {
+  width: 50vh;
+  min-height: 50vh;
+  border-radius: 18px;
+  background: var(---veryPaleBlue);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 30px 35px 0px var(---desaturatedBlue);
+}
+
+.avatar {
+  width: 100%;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  margin-bottom: 30px;
+}
+
+.content {
+  text-align: center;
+  margin: 0 auto;
+  width: 270px;
+}
+
+.content h2 {
+  color: var(---darkBlue);
+  font-weight: 799;
+  margin-bottom: 20px;
+}
+
+.content p {
+  color: var(---desaturatedBlue);
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+.music {
+  display: flex;
+  align-items: center;
+  width: 290px;
+  margin: 0 auto;
+  background: hsl(228, 79%, 96%);
+  padding: 15px;
+  border-radius: 12px;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.annual-plan {
+  font-weight: 800;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.annual-price {
+  color: var(---desaturatedBlue);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.music a {
+  margin-left: 40px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(---brightBlue);
+  cursor: pointer;
+}
+
+.music a:hover {
+    opacity: 0.7;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: var(---brightBlue);
+  color: var(---paleBlue);
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  width: 290px;
+  margin: 0 auto;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0px 15px 20px 0px var(---desaturatedBlue);
+  cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.cancel-order {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: var(---desaturatedBlue);
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.cancel-order:hover{
+    opacity: 1;
+}
+
+@media screen and (min-width: 1440px) {
+  .attribution {
+    font-size: 15px;
+  }
+}

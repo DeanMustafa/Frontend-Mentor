@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+:root {
+  ---arkCyan: hsl(158, 36%, 37%);
+  ---cream: hsl(30, 38%, 92%);
+
+  ---veryDarkBlue: hsl(212, 21%, 14%);
+  ---darkGrayishBlue: hsl(228, 12%, 48%);
+  ---white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(---cream);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.attribution {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(---veryDarkBlue);
+  font-size: 13px;
+}
+
+.attribution a {
+  color: var(---arkCyan);
+}
+
+.attribution a:hover {
+  opacity: 0.7;
+}
+
+.card {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background: var(---white);
+}
+
+.product {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.desktop {
+  display: none;
+}
+
+.container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container h5 {
+  color: var(---darkGrayishBlue);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+
+.container h1 {
+  font-weight: 700;
+  line-height: 28px;
+  font-family: "Fraunces", sans-serif;
+}
+
+.container p {
+  font-size: 14.5px;
+  line-height: 22px;
+  color: var(---darkGrayishBlue);
+}
+
+.container h3 {
+  color: var(---arkCyan);
+  font-size: 30px;
+  font-family: "Fraunces", sans-serif;
+}
+
+.container h3 span {
+  display: inline-block;
+  vertical-align: text-top;
+  font-size: 13px;
+  text-decoration: line-through;
+  color: var(---darkGrayishBlue);
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.container button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  padding: 15px;
+  background: var(---arkCyan);
+  color: var(---white);
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.container button:hover {
+  background: var(---veryDarkBlue);
+}
+
+.container button:active {
+  scale: 0.9;
+}
+
+.container button img {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+  .attribution {
+    bottom: 30px;
+    font-size: 15px;
+  }
+
+  .card {
+    min-height: 50vh;
+    width: 100vh;
+    display: grid;
+    grid-template: "pic text";
+  }
+
+  .product {
+    grid-area: pic;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+  }
+
+  .desktop {
+    display: unset;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .container {
+    grid-area: text;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 50vh;
+    padding: 50px 50px 0px 50px;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .container h5 {
+    letter-spacing: 7px;
+    font-size: 20px;
+    font-weight: 530;
+  }
+
+  .container h1 {
+    font-weight: 800;
+    line-height: 50px;
+    font-size: 50px;
+  }
+
+  .container p {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .container h3 {
+    font-size: 50px;
+  }
+
+  .container h3 span {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-left: 35px;
+  }
+
+  .container button {
+    border-radius: 7px;
+    padding: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 16px;
+  }
+
+  .container button img {
+    margin-right: 15px;
+  }
+}

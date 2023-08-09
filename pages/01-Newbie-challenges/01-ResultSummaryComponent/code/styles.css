@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body{
+  position: relative;
+}
+
+.attribution {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: none;
+}
+
+.attribution a {
+  color: hsl(241, 81%, 54%);
+}
+
+.attribution a:hover {
+  opacity: 0.7;
+}
+
+.result {
+  height: 50vh;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  gap: 1em;
+  color: white;
+  position: relative;
+}
+
+.result h3 {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+.circle {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  padding: 2em;
+  margin: 5px 0;
+  width: 140px;
+  border-radius: 50%;
+}
+
+.circle h1 {
+  font-size: 50px;
+}
+
+.circle p {
+  opacity: 0.5;
+}
+
+.result h2 {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.comment {
+  width: 280px;
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  line-height: 22px;
+}
+
+.summary {
+  min-height: 50vh;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary h3 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.section {
+  display: flex;
+  width: 100%;
+  padding: 13px;
+  margin: 10px 0;
+  justify-content: space-between;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.section div {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+span {
+  font-weight: 600;
+  color: black;
+}
+
+.score {
+  color: gray;
+}
+
+.reaction {
+  background: hsla(0, 100%, 67%, 0.1);
+}
+
+.memory {
+  background: hsla(39, 100%, 56%, 0.1);
+}
+
+.verbal {
+  background: hsla(166, 100%, 37%, 0.1);
+}
+
+.visual {
+  background: hsla(234, 85%, 45%, 0.1);
+}
+
+.reaction .title {
+  color: hsl(0, 100%, 67%);
+}
+
+.memory .title {
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal .title {
+  color: hsl(166, 100%, 37%);
+}
+
+.visual .title {
+  color: hsl(234, 85%, 45%);
+}
+
+button {
+  outline: none;
+  border: none;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 35px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: white;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+button:hover {
+  background: hsla(250, 43%, 13%, 0.801);
+}
+
+@media screen and (min-width: 1440px) {
+  .attribution {
+    bottom: 20px;
+    display: unset;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .result {
+    margin-right: -30px;
+    width: 375px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    gap: 1.3em;
+    box-shadow: 0px 20px 20px 0px rgba(173, 216, 230, 0.4);
+  }
+
+  .result h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .circle {
+    padding: 4em;
+    margin: 0;
+    width: 230px;
+  }
+
+  .circle h1 {
+    font-size: 60px;
+  }
+
+  .circle p {
+    font-size: 18px;
+    opacity: 0.5;
+  }
+
+  .result h2 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 28px;
+  }
+
+  .comment {
+    width: 270px;
+    font-weight: 500;
+  }
+
+  .summary {
+    width: 440px;
+    height: 50vh;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 20px 20px 0px rgba(173, 216, 230, 0.4);
+  }
+
+  .summary h3 {
+    font-size: 24px;
+  }
+
+  .section {
+    width: 300px;
+    padding: 15px;
+  }
+
+  .visual {
+    background: hsla(234, 85%, 45%, 0.1);
+    margin-bottom: 25px;
+  }
+
+  button {
+    font-size: 18px;
+    width: 300px;
+    padding: 18px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+}

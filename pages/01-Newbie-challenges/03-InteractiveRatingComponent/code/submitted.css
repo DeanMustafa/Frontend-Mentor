@@ -1,0 +1,138 @@
+:root {
+  ---orange: hsl(25, 97%, 53%);
+
+  ---white: hsl(0, 0%, 100%);
+  ---lightGrey: hsl(217, 12%, 63%);
+  ---mediumGrey: hsl(216, 12%, 54%);
+  ---darkBlue: hsla(213, 20%, 18%, 0.5);
+  ---veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(---veryDarkBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.attribution {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(---white);
+}
+
+.attribution a {
+  color: var(---orange);
+}
+
+.attribution a:hover{
+  opacity: 0.7;
+}
+
+.back {
+  color: var(---orange);
+  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 38px;
+  padding: 10px;
+  background: var(---darkBlue);
+  border-radius: 50%;
+}
+
+.back:hover {
+  background: var(---mediumGrey);
+}
+
+.back:active {
+  scale: 0.9;
+}
+
+.card {
+  width: 50vh;
+  height: 55vh;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 1.5em;
+  color: var(---white);
+  background: var(---darkBlue);
+  font-family: sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+.card img {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.rating {
+  color: var(---orange);
+  font-size: 14px;
+  margin: 35px;
+  padding: 10px;
+  background: var(---darkBlue);
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: var(---lightGrey);
+  line-height: 23px;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 1440px) {
+  .back {
+    top: 30px;
+    right: 30px;
+    width: 45px;
+    padding: 13px;
+  }
+
+  .card {
+    height: 50vh;
+    border-radius: 30px;
+    padding: 2em;
+  }
+
+  .card img {
+    width: 150px;
+  }
+
+  .rating {
+    font-size: 16px;
+    margin: 40px;
+    padding: 12px;
+    letter-spacing: 2px;
+  }
+
+  .card h2 {
+    margin-bottom: 25px;
+  }
+
+  .card p {
+    line-height: 25px;
+    font-size: 15px;
+  }
+}
