@@ -94,12 +94,14 @@ header {
 }
 
 .git {
+  height: 50px;
   width: 50px;
   justify-self: left;
   transition: all 0.3s;
 }
 
 .link {
+  height: 50px;
   width: 50px;
   justify-self: right;
   transition: all 0.3s;
@@ -213,10 +215,12 @@ p a {
   }
   
   .git {
+    height: 70px;
     width: 70px;
   }
   
   .link {
+    height: 70px;
     width: 70px;
   }
   
