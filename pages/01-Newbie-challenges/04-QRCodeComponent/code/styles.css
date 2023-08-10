@@ -17,23 +17,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   font-family: sans-serif;
 }
 
 .attribution {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 10px;
-  left: 0;
-  right: 0;
+  margin-top: 10px;
   text-align: center;
   color: var(---darkBlue);
+  font-size: 13px;
 }
 
 .attribution a {
-  color: var(---grayishBlue);
+  color: rgb(20, 20, 170);
 }
 
 .attribution a:hover{
@@ -41,8 +37,8 @@ body {
 }
 
 .card {
-  min-height: 60vh;
-  width: 50vh;
+  width: 90%;
+  max-width: 340px;
   background: var(---white);
   border-radius: 17px;
   padding: 15px;
@@ -75,10 +71,15 @@ body {
   line-height: 20px;
 }
 
-@media screen and (min-width: 1440px) {
+@media (min-width: 426px) {
+  .attribution {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+
   .card {
-    min-height: 60vh;
-    width: 40vh;
+    width: 90%;
+    max-width: 400px;
     background: var(---white);
     border-radius: 20px;
     padding: 20px;

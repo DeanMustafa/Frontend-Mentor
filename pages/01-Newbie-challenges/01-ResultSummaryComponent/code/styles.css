@@ -7,19 +7,16 @@
   font-family: "Hanken Grotesk", sans-serif;
 }
 
-body{
-  position: relative;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .attribution {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin-top: 5px;
   text-align: center;
-  display: none;
+  font-size: 13px;
 }
 
 .attribution a {
@@ -31,7 +28,6 @@ body{
 }
 
 .result {
-  height: 50vh;
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -75,7 +71,6 @@ body{
 }
 
 .comment {
-  width: 280px;
   opacity: 0.8;
   letter-spacing: 0.5px;
   word-spacing: 1px;
@@ -83,7 +78,6 @@ body{
 }
 
 .summary {
-  min-height: 50vh;
   margin: 25px;
   display: flex;
   flex-direction: column;
@@ -98,7 +92,6 @@ body{
 
 .section {
   display: flex;
-  width: 100%;
   padding: 13px;
   margin: 10px 0;
   justify-content: space-between;
@@ -161,7 +154,7 @@ span {
 button {
   outline: none;
   border: none;
-  margin: 15px 0;
+  margin-top: 15px;
   padding: 15px;
   border-radius: 35px;
   font-size: 16px;
@@ -174,29 +167,36 @@ button:hover {
   background: hsla(250, 43%, 13%, 0.801);
 }
 
-@media screen and (min-width: 1440px) {
+@media (min-width: 650px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
   .attribution {
-    bottom: 20px;
-    display: unset;
+    margin-top: 30px;
+    font-size: 15px;
   }
 
   .main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
   }
 
   .result {
     margin-right: -30px;
-    width: 375px;
+    max-width: 375px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2em;
     gap: 1.3em;
-    box-shadow: 0px 20px 20px 0px rgba(173, 216, 230, 0.4);
+    box-shadow: 0px 0px 20px 5px rgba(173, 216, 230, 0.4);
   }
 
   .result h3 {
@@ -226,17 +226,18 @@ button:hover {
   }
 
   .comment {
-    width: 270px;
     font-weight: 500;
   }
 
   .summary {
-    width: 440px;
-    height: 50vh;
+    padding: 1.7em;
+    width: 400px;
     margin: 0px;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 20px 20px 0px rgba(173, 216, 230, 0.4);
+    box-shadow: 0px 0px 20px 5px rgba(173, 216, 230, 0.4);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 25px;
   }
 
   .summary h3 {

@@ -19,22 +19,18 @@
 body {
   background: var(---cream);
   display: flex;
-  height: 100vh;
+  flex-direction: column;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
 }
 
 .attribution {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 10px;
-  left: 0;
-  right: 0;
+  margin: 5px 0;
   text-align: center;
   color: var(---veryDarkBlue);
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .attribution a {
@@ -51,6 +47,7 @@ body {
   flex-direction: column;
   border-radius: 12px;
   background: var(---white);
+  margin-bottom: 20px;
 }
 
 .product {
@@ -67,7 +64,6 @@ body {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
 .container h5 {
@@ -75,23 +71,27 @@ body {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .container h1 {
   font-weight: 700;
   line-height: 28px;
+  margin-bottom: 10px;
   font-family: "Fraunces", sans-serif;
 }
 
 .container p {
   font-size: 14.5px;
   line-height: 22px;
+  margin-bottom: 10px;
   color: var(---darkGrayishBlue);
 }
 
 .container h3 {
   color: var(---arkCyan);
   font-size: 30px;
+  margin-bottom: 10px;
   font-family: "Fraunces", sans-serif;
 }
 
@@ -131,21 +131,22 @@ body {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 1440px) {
+@media (min-width: 768px) {
   .attribution {
-    bottom: 30px;
     font-size: 15px;
   }
 
   .card {
-    min-height: 50vh;
-    width: 100vh;
+    max-width: 800px;
     display: grid;
     grid-template: "pic text";
+    overflow: hidden;
   }
 
   .product {
     grid-area: pic;
+    max-width: 500px;
+    min-width: 300px;
     border-top-left-radius: 15px;
     border-top-right-radius: 0;
     border-bottom-left-radius: 15px;
@@ -163,42 +164,45 @@ body {
     grid-area: text;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    width: 50vh;
-    padding: 50px 50px 0px 50px;
-    gap: 40px;
+    max-width: 500px;
+    min-width: 300px;
     justify-content: center;
   }
 
   .container h5 {
     letter-spacing: 7px;
-    font-size: 20px;
-    font-weight: 530;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
   }
 
   .container h1 {
     font-weight: 800;
-    line-height: 50px;
-    font-size: 50px;
+    line-height: 40px;
+    font-size: 35px;
+    margin-bottom: 20px;
   }
 
   .container p {
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px;
   }
 
   .container h3 {
-    font-size: 50px;
+    font-size: 30px;
+    margin-bottom: 25px;
   }
 
   .container h3 span {
-    font-size: 25px;
+    font-size: 15px;
     margin-top: 5px;
     margin-left: 35px;
   }
 
   .container button {
     border-radius: 7px;
-    padding: 20px;
+    padding: 15px;
     font-weight: 800;
     letter-spacing: 2px;
     font-size: 16px;
@@ -206,5 +210,38 @@ body {
 
   .container button img {
     margin-right: 15px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container h5 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .container h1 {
+    line-height: 45px;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .container p {
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .container h3 {
+    font-size: 40px;
+    margin-bottom: 35px;
+  }
+
+  .container h3 span {
+    font-size: 20px;
+  }
+
+  .container button {
+    padding: 18px;
+    font-size: 18px;
   }
 }

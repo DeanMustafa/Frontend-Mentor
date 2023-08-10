@@ -14,11 +14,11 @@
 }
 
 body {
-  background: url(/FrontEndMentor/order-summary-component-main/images/pattern-background-desktop.svg) no-repeat;
+  background: url(../images/pattern-background-desktop.svg) no-repeat;
   background-position: top;
   background-size: contain;
   background-color: var(---paleBlue);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,12 +27,7 @@ body {
 }
 
 .attribution {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 10px;
-  left: 0;
-  right: 0;
+  margin-top: 20px;
   text-align: center;
   color: var(---darkBlue);
   font-size: 13px;
@@ -52,47 +47,46 @@ body {
 }
 
 .card {
-  width: 50vh;
-  min-height: 50vh;
-  border-radius: 18px;
+  width: 90%;
+  max-width: 375px;
+  border-radius: 15px;
   background: var(---veryPaleBlue);
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 30px 35px 0px var(---desaturatedBlue);
+  box-shadow: 0px 10px 15px 2px var(---desaturatedBlue);
 }
 
 .avatar {
   width: 100%;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
-  margin-bottom: 30px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 20px;
 }
 
 .content {
   text-align: center;
   margin: 0 auto;
-  width: 270px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .content h2 {
   color: var(---darkBlue);
-  font-weight: 799;
   margin-bottom: 20px;
 }
 
 .content p {
   color: var(---desaturatedBlue);
   line-height: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .music {
   display: flex;
   align-items: center;
-  width: 290px;
   margin: 0 auto;
   background: hsl(228, 79%, 96%);
-  padding: 15px;
+  padding: 15px 10px;
   border-radius: 12px;
   gap: 18px;
   margin-bottom: 25px;
@@ -130,12 +124,12 @@ button {
   font-size: 15px;
   letter-spacing: 1px;
   font-weight: 600;
-  width: 290px;
-  margin: 0 auto;
   padding: 16px;
+  align-self: center;
+  min-width: 280px;
   border-radius: 12px;
   margin-bottom: 25px;
-  box-shadow: 0px 15px 20px 0px var(---desaturatedBlue);
+  box-shadow: 0px 5px 10px 1px var(---desaturatedBlue);
   cursor: pointer;
 }
 
@@ -161,6 +155,7 @@ button:hover {
 
 @media screen and (min-width: 1440px) {
   .attribution {
+    margin-top: 50px;
     font-size: 15px;
   }
 }
