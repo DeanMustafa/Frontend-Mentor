@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  ---brightOrange: hsl(31, 77%, 52%);
+  ---darkCyan: hsl(184, 100%, 22%);
+  ---veryDarkCyan: hsl(179, 100%, 13%);
+
+  ---TransparentWhite-paragraphs: hsla(0, 0%, 100%, 0.75);
+  ---VeryLightGray-bg-head-btn: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+main {
+  width: 90%;
+  max-width: 290px;
+  margin: 20px 0;
+  border-radius: 7px;
+  color: var(---VeryLightGray-bg-head-btn);
+}
+
+.top {
+  background: var(---brightOrange);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.top-btn {
+  color: var(---brightOrange);
+}
+
+.top-btn:hover {
+  background: var(---brightOrange);
+  color: var(---VeryLightGray-bg-head-btn);
+}
+
+.top-btn:active {
+  transition: all 0.3s;
+  scale: 0.9;
+}
+
+.mid {
+  background: var(---darkCyan);
+}
+
+.mid-btn {
+  color: var(---darkCyan);
+}
+
+.mid-btn:hover {
+  background: var(---darkCyan);
+  color: var(---VeryLightGray-bg-head-btn);
+}
+
+.mid-btn:active {
+  transition: all 0.3s;
+  scale: 0.9;
+}
+
+.btm {
+  background: var(---veryDarkCyan);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.btm-btn {
+  color: var(---veryDarkCyan);
+}
+
+.btm-btn:hover {
+  background: var(---veryDarkCyan);
+  color: var(---VeryLightGray-bg-head-btn);
+}
+
+.btm-btn:active {
+  transition: all 0.3s;
+  scale: 0.9;
+}
+
+article {
+  padding: 40px;
+}
+
+img {
+  margin-bottom: 25px;
+  width: 50px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 30px;
+}
+
+article p {
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 25px;
+  color: var(---TransparentWhite-paragraphs);
+  font-weight: 400;
+}
+
+button {
+  outline: none;
+  padding: 10px 25px;
+  border: 1px solid var(---VeryLightGray-bg-head-btn);
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: var(---darkCyan);
+  font-size: 13px;
+}
+
+footer p a {
+  color: var(---brightOrange);
+  font-size: 13px;
+}
+
+@media (min-width: 1440px) {
+  main {
+    width: 100%;
+    max-width: 870px;
+    display: grid;
+    grid-template: "sedans suvs luxury" / 1fr 1fr 1fr;
+  }
+
+  article p {
+    height: 150px;
+  }
+
+  .top {
+    grid-area: sedans;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 0px;
+  }
+
+  .mid {
+    grid-area: suvs;
+  }
+
+  .btm {
+    grid-area: luxury;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+
+  footer p {
+    font-size: 15px;
+  }
+
+  footer p a {
+    font-size: 15px;
+  }
+}
