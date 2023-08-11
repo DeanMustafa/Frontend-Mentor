@@ -73,6 +73,80 @@ header {
   box-shadow: 0px 5px 15px 1px var(---clr-dark-gray);
 }
 
+.card {
+  width: 280px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: var(---clr-gray);
+  box-shadow: 0px 1px 10px 1px var(---clr-mid-gray);
+  overflow: hidden;
+}
+
+.image {
+  transition: all 0.3s;
+  width: 280px;
+  margin-bottom: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+.sub-title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: var(---clr-dark-gray);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.sub-title:hover {
+  text-decoration: underline;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.languages {
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+}
+
+.html {
+  color: var(---clr-green);
+  font-weight: 600;
+}
+
+.css {
+  color: var(---clr-orange);
+  font-weight: 600;
+}
+
+.js {
+  color: var(---clr-red);
+  font-weight: 600;
+}
+
+.js-x {
+  display: none;
+}
+
+.difficulty {
+  border: 1px solid var(---clr-green);
+  padding: 5px;
+  border-radius: 5px;
+  color: var(---clr-green);
+  font-weight: 600;
+}
+
 @media (min-width: 650px) {
   header {
     margin-bottom: 80px;
@@ -93,5 +167,10 @@ header {
     border-radius: 18px;
     padding: 35px;
     margin-bottom: 50px;
+  }
+
+  .sub-title {
+    font-size: 20px;
+    height: 35px;
   }
 }
