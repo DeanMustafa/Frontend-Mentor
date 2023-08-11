@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter sign-up form with success message</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="submit-page" class="submit">
+      <article>
+        <img src="../images/icon-success.svg" alt="checked" />
+        <h1 class="title">Thanks for subscribing!</h1>
+        <p class="sub-title">
+          A confirmation email has been sent to <span id="output"></span>.
+          Please open it and click the button inside to confirm your
+          subscription
+        </p>
+      </article>
+      <button id="btn-back">Dismiss message</button>
+    </main>
+    <main id="default-page" class="default">
+      <img
+        src="../images/illustration-sign-up-mobile.svg"
+        alt="bg"
+        class="bg mobile"
+      />
+      <img
+        src="../images/illustration-sign-up-desktop.svg"
+        alt="bg"
+        class="bg desktop"
+      />
+      <article>
+        <h1 class="title">Stay updated!</h1>
+        <p class="sub-title">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <div class="item">
+          <img class="icon" src="../images/icon-list.svg" alt="icon" />
+          <p>Product discovery and building what matters</p>
+        </div>
+        <div class="item">
+          <img class="icon" src="../images/icon-list.svg" alt="icon" />
+          <p>Measuring to ensure updates are a success</p>
+        </div>
+        <div class="item">
+          <img class="icon" src="../images/icon-list.svg" alt="icon" />
+          <p>And much more!</p>
+        </div>
+        <div class="error">
+          <label for="input">Email address</label>
+          <p id="error">Valid email required</p>
+        </div>
+        <input
+          id="input"
+          type="email"
+          placeholder="email@company.com"
+          required
+        />
+        <button id="btn">Subscribe to monthly newsletter</button>
+      </article>
+    </main>
+    <footer>
+      <p>
+        Challenge by
+        <a
+          target="_blank"
+          href="https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv"
+          >Frontend Mentor</a
+        >. Coded by
+        <a target="_blank" href="https://github.com/DeanMustafa">Dean Mustafa</a
+        >.
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
