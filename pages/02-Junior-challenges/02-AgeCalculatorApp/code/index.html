@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age calculator app</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="items">
+          <div class="item">
+            <label id="label-day" for="day">DAY</label>
+            <input
+              maxlength="2"
+              id="day"
+              type="number"
+              class="day"
+              placeholder="DD"
+            />
+            <p id="alert-day" class="alert-empty">This firld is required</p>
+            <p id="alert-day-wrong" class="alert-wrong">Must be a valid day</p>
+          </div>
+          <div class="item">
+            <label id="label-month" for="month">MONTH</label>
+            <input
+              maxlength="2"
+              id="month"
+              type="number"
+              class="month"
+              placeholder="MM"
+            />
+            <p id="alert-month" class="alert-empty">This firld is required</p>
+            <p id="alert-month-wrong" class="alert-wrong">
+              Must be a valid month
+            </p>
+          </div>
+          <div class="item">
+            <label id="label-year" for="year">YEAR</label>
+            <input
+              maxlength="4"
+              id="year"
+              type="number"
+              class="year"
+              placeholder="YYYY"
+            />
+            <p id="alert-year" class="alert-empty">This firld is required</p>
+            <p id="alert-year-wrong" class="alert-wrong">
+              Must be a valid year
+            </p>
+          </div>
+        </div>
+        <div class="line">
+          <button id="button">
+            <img src="../images/icon-arrow.svg" alt="arrow-down" />
+          </button>
+        </div>
+        <div class="content">
+          <h1><span id="output-year">- -</span> years</h1>
+          <h1><span id="output-month">- -</span> months</h1>
+          <h1><span id="output-day">- -</span> days</h1>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Challenge by
+        <a
+          target="_blank"
+          href="https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q"
+          >Frontend Mentor</a
+        >. Coded by
+        <a target="_blank" href="https://github.com/DeanMustafa">Dean Mustafa</a
+        >.
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
