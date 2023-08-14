@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+:root {
+  ---red: hsl(1, 90%, 64%);
+  ---blue: hsl(219, 85%, 26%);
+
+  ---white: hsl(0, 0%, 100%);
+  ---veryLightGrayishBlue: hsl(210, 60%, 98%);
+  ---lightGrayishBlue-1: hsl(211, 68%, 94%);
+  ---lightGrayishBlue-2: hsl(205, 33%, 90%);
+  ---grayishBlue: hsl(219, 14%, 63%);
+  ---darkGrayishBlue: hsl(219, 12%, 42%);
+  ---veryDarkBlue: hsl(224, 21%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(---veryDarkBlue);
+}
+
+main {
+  margin: 15px;
+  max-width: 1024px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.title span {
+  background: var(---blue);
+  color: var(---white);
+  font-size: 15px;
+  padding: 3px 11px;
+  border-radius: 7px;
+}
+
+.sub-title {
+  color: var(---darkGrayishBlue);
+  font-size: 14px;
+}
+
+.sub-title:hover {
+  color: var(---blue);
+  cursor: pointer;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user {
+  border-radius: 7px;
+  background: var(---veryLightGrayishBlue);
+  padding: 20px;
+  font-size: 14px;
+  display: flex;
+}
+
+.user-no-back {
+  background: var(---white);
+}
+
+.user .user-pic {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.user .red-dot {
+  margin-left: 3px;
+  width: 10px;
+}
+
+.info {
+  width: 100%;
+}
+
+.name {
+  color: var(---veryDarkBlue);
+  font-weight: 800;
+  margin-right: 5px;
+}
+
+.name:hover {
+  cursor: pointer;
+  color: var(---blue);
+}
+
+.text {
+  color: var(---darkGrayishBlue);
+  vertical-align: bottom;
+}
+
+.text a {
+  color: var(---blue);
+  font-weight: 600;
+}
+
+.text a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.reacted {
+  color: var(---darkGrayishBlue);
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.reacted:hover {
+  cursor: pointer;
+  color: var(---blue);
+}
+
+.time {
+  color: var(---grayishBlue);
+  margin-top: 3px;
+}
+
+.message {
+  border: 1px solid var(---lightGrayishBlue-2);
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+  color: var(---darkGrayishBlue);
+}
+
+.message:hover {
+  cursor: pointer;
+  background: var(---veryLightGrayishBlue);
+}
+
+.user .my-pic {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.my-pic:hover {
+  box-shadow: 0px 0px 1px 3px var(---lightGrayishBlue-1);
+}
+
+footer {
+  font-size: 13px;
+  text-align: center;
+  color: var(---darkGrayishBlue);
+  margin-bottom: 10px;
+}
+
+footer a{
+  color: var(---red);
+}
+
+footer a:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  footer {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+}
