@@ -27,11 +27,15 @@ body {
   align-items: center;
   font-family: "Plus Jakarta Sans", sans-serif;
   color: var(---veryDarkBlue);
+  background: var(---grayishBlue);
 }
 
 main {
+  background: var(---white);
   margin: 15px;
-  max-width: 1024px;
+  padding: 30px 15px 15px 15px;
+  max-width: 700px;
+  border-radius: 15px;
 }
 
 .head {
@@ -162,7 +166,7 @@ article {
 footer {
   font-size: 13px;
   text-align: center;
-  color: var(---darkGrayishBlue);
+  color: var(---veryDarkBlue);
   margin-bottom: 10px;
 }
 
