@@ -263,6 +263,22 @@ button:hover {
   width: 100%;
 }
 
+footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: var(---veryDarkViolet);
+}
+
+footer a {
+  color: var(---red-inputErrors);
+}
+
+footer a:hover {
+  opacity: 0.7;
+}
+
 @media (min-width: 768px) {
   .backside {
     right: 70px;
@@ -316,6 +332,10 @@ button:hover {
 
   .submitted-page p {
     font-size: 18px;
+  }
+
+  footer {
+    font-size: 15px;
   }
 }
 
