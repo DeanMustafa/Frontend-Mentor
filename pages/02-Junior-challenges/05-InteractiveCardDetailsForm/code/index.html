@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive card details form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <article id="first-page-bg" class="top">
+        <div class="back-card">
+          <img
+            class="card backside"
+            src="../images/bg-card-back.png"
+            alt="back-card"
+          />
+          <p id="inp-user-cvc">000</p>
+        </div>
+        <div class="front-card">
+          <img
+            class="card frontside"
+            src="../images/bg-card-front.png"
+            alt="front-card"
+          />
+          <img class="logo" src="../images/card-logo.svg" alt="logo" />
+          <p id="inp-user-card-number" class="cardN">0000 0000 0000 0000</p>
+          <div class="info">
+            <p id="inp-user-name" class="namecard">Dean Mustafa</p>
+            <p id="inp-user-expdate" class="expdate">00/00</p>
+          </div>
+        </div>
+      </article>
+      <article id="first-page" class="bottom">
+        <div class="container">
+          <label class="input-cardname-label" for="incardName"
+            >CARDHOLDER NAME</label
+          >
+          <input
+            id="incardName"
+            type="text"
+            placeholder="e.g. Dean Mustafa"
+            required
+          />
+          <p id="alert-name" class="pop-up">Can't be blank</p>
+          <label for="cardNumber">CARD NUMBER</label>
+          <input
+            id="cardNumber"
+            type="number"
+            placeholder="e.g. 1234 5678 9123 0000"
+            required
+          />
+          <p id="alert-cardNum" class="pop-up">Can't be blank</p>
+          <div class="devided-input">
+            <label class="exp-lab" for="month">EXP. DATE (MM/YY)</label>
+            <input
+              class="exp-mm"
+              id="month"
+              type="number"
+              placeholder="MM"
+              required
+            />
+            <input
+              class="exp-yy"
+              id="year"
+              type="number"
+              placeholder="YY"
+              required
+            />
+            <p id="alert-exp" class="pop-up">Can't be blank</p>
+            <label class="cvc-lab" for="cvc">CVC</label>
+            <input
+              class="cvc-inp"
+              id="cvc"
+              type="number"
+              placeholder="e.g. 123"
+              required
+            />
+          </div>
+          <button id="submit">Confirm</button>
+          <p id="checked-text" class="check-it hide">
+            Check all the information you have entered on the back and front of
+            the card. Once you checked it, click "PROCEED"
+          </p>
+          <button id="checked" class="hide">Proceed</button>
+        </div>
+      </article>
+      <article id="second-page" class="submitted-page">
+        <img src="../images/icon-complete.svg" alt="checked" />
+        <h1>THANK YOU!</h1>
+        <p>We've added your card details</p>
+        <button id="done">Continue</button>
+      </article>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
